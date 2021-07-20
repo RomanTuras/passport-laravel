@@ -117,4 +117,15 @@ Route::middleware('auth:api')->group(function () {
 });
 ```
 
-### Now `X-XSRF-TOKEN` will be added in the header automatically from your Vue Js code,
+### Now `X-XSRF-TOKEN` will be added in the header automatically from your Vue Js code
+
+---
+
+### Don't forget about key's (deploy them to prod):
+
+```
+storage/oauth-private.key
+storage/oauth-public.key
+```
+
+### And create all `oauth` tables in the remote DB
